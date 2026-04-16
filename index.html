@@ -1,200 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sehba Ashraf Bangalath | Cybersecurity Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0b1220;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<title>Sehba Ashraf Bangalath | Cybersecurity Portfolio</title>
 
-    header {
-      background: #0f172a;
-      padding: 50px 20px;
-      text-align: center;
-      border-bottom: 1px solid #1e293b;
-    }
+<style>
+:root {
+  --bg:#0a0f14;
+  --panel:#111823;
+  --text:#c9d1d9;
+  --muted:#8b949e;
+  --accent:#00c2a8;
+  --accent2:#3b82f6;
+  --border:#1f2a37;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 38px;
-      color: #38bdf8;
-    }
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
 
-    header p {
-      font-size: 18px;
-      color: #94a3b8;
-      margin-top: 10px;
-    }
+/* HEADER */
+header{
+  text-align:center;
+  padding:70px 20px;
+  border-bottom:1px solid var(--border);
+}
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+header h1{
+  font-size:40px;
+  margin:0;
+}
 
-    h2 {
-      color: #38bdf8;
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
+header span{
+  color:var(--accent);
+}
 
-    .card {
-      background: #111827;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      border: 1px solid #1f2937;
-    }
+header p{
+  color:var(--muted);
+  margin-top:10px;
+}
 
-    .tag {
-      display: inline-block;
-      background: #0ea5e9;
-      color: white;
-      padding: 5px 10px;
-      margin: 5px 5px 0 0;
-      border-radius: 6px;
-      font-size: 12px;
-    }
+/* SECTIONS */
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
+h2{
+  border-left:3px solid var(--accent);
+  padding-left:10px;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+/* CARDS */
+.card{
+  background:var(--panel);
+  padding:18px;
+  margin:12px 0;
+  border:1px solid var(--border);
+  border-radius:8px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0f172a;
-      border-top: 1px solid #1e293b;
-      color: #64748b;
-      margin-top: 40px;
-    }
-  </style>
+/* TAGS */
+.tag{
+  display:inline-block;
+  background:#16212e;
+  color:var(--accent);
+  padding:4px 8px;
+  margin:3px;
+  font-size:12px;
+  border-radius:4px;
+}
+
+/* LINKS */
+a{
+  color:var(--accent2);
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  margin-top:10px;
+  background:var(--accent);
+  color:#000;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  opacity:0.8;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+@media(max-width:768px){
+  .grid{grid-template-columns:1fr;}
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:var(--muted);
+  border-top:1px solid var(--border);
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>Sehba Ashraf Bangalath</h1>
-  <p>Cybersecurity Enthusiast | SOC Analyst Aspirant | Web Security Analyst</p>
+  <h1>Sehba Ashraf <span>Bangalath</span></h1>
+  <p>Cybersecurity Analyst | SOC Aspirant | Web Security Researcher</p>
+
+  <a class="btn" href="cv.pdf" download>Download CV</a>
 </header>
 
+<!-- ABOUT -->
 <section>
+<h2>About Me</h2>
+<div class="card">
+Cybersecurity-focused Computer Science Engineering graduate with hands-on experience in OWASP Top 10 vulnerabilities, SQL Injection, XSS, and web attack simulation labs. Strong interest in SOC operations and vulnerability analysis.
+</div>
+</section>
 
-  <h2>About Me</h2>
+<!-- SKILLS -->
+<section>
+<h2>Core Skills</h2>
+<div class="card">
+  <span class="tag">OWASP Top 10</span>
+  <span class="tag">SQL Injection</span>
+  <span class="tag">XSS</span>
+  <span class="tag">Vulnerability Assessment</span>
+  <span class="tag">Secure Coding</span>
+  <span class="tag">Networking</span>
+  <span class="tag">Linux</span>
+  <span class="tag">C / C++ / Java</span>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Cybersecurity Projects</h2>
+
+<div class="grid">
+
   <div class="card">
-    Cybersecurity-focused Computer Science Engineering graduate with practical exposure to web application security analysis, OWASP Top 10 vulnerabilities, and attack vector identification. Passionate about ethical hacking, vulnerability assessment, and improving system security through structured analysis and hands-on labs.
+    <h3>OWASP Security Analysis</h3>
+    <p>Study of OWASP Top 10 vulnerabilities including SQLi and XSS.</p>
+    <a href="OWASP_Juice_Shop_Report.pdf" target="_blank">View Report</a>
   </div>
+
+  <div class="card">
+    <h3>Web Attack Simulation</h3>
+    <p>Explored attack vectors and exploitation techniques in controlled labs.</p>
+    <a href="PROJECT_FIRST.pdf" target="_blank">View Report</a>
+  </div>
+
+  <div class="card">
+    <h3>Secure Web Development</h3>
+    <p>Built secure web apps using input validation and secure coding practices.</p>
+  </div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<h2>Experience</h2>
+
+<div class="card">
+<b>Network Engineering Intern</b><br>
+Cloudix Technologies | Dec 2023 – Jun 2024
+</div>
+
+<div class="card">
+<b>Web Developer Intern</b><br>
+Brainovision Solutions | 2021
+</div>
 
 </section>
 
+<!-- CERTIFICATIONS -->
 <section>
+<h2>Certifications</h2>
 
-  <h2>Core Skills</h2>
-  <div class="card">
-    <span class="tag">OWASP Top 10</span>
-    <span class="tag">SQL Injection (SQLi)</span>
-    <span class="tag">Cross-Site Scripting (XSS)</span>
-    <span class="tag">Vulnerability Assessment</span>
-    <span class="tag">Secure Coding</span>
-    <span class="tag">Attack Vectors</span>
-    <span class="tag">Authentication Security</span>
-    <span class="tag">Networking Basics</span>
-  </div>
+<div class="card">
+Google Cybersecurity Foundations (Coursera) – 2025<br>
+Advanced Java – IIT – 2020<br>
+Internshala Web Development – 2021
+</div>
 
 </section>
 
+<!-- CONTACT -->
 <section>
+<h2>Contact</h2>
 
-  <h2>Technical Skills</h2>
-  <div class="card">
-    <b>Programming:</b> C, C++, Java (Academic Foundation)<br><br>
-    <b>Security:</b> OWASP Top 10, Web Security Basics, Threat Awareness<br><br>
-    <b>Tools:</b> GitHub, Linux Basics, Browser DevTools<br><br>
-    <b>Other:</b> Networking Fundamentals, IT Infrastructure Exposure
-  </div>
-
-</section>
-
-<section>
-
-  <h2>Cybersecurity Projects</h2>
-
-  <div class="card">
-    <h3>OWASP Top 10 Security Analysis</h3>
-    <p>Analyzed OWASP Top 10 vulnerabilities including SQL Injection, XSS, and authentication flaws. Documented attack flows and mitigation strategies.</p>
-    <a href="https://github.com/">GitHub Repository</a>
-  </div>
-
-  <div class="card">
-    <h3>Web Vulnerability Simulation Lab</h3>
-    <p>Simulated real-world attack vectors such as SQL Injection and XSS in controlled environments to understand exploitation techniques and defense mechanisms.</p>
-    <a href="https://github.com/">GitHub Repository</a>
-  </div>
-
-  <div class="card">
-    <h3>Secure Web Development Project</h3>
-    <p>Built web applications using HTML, CSS, and JavaScript with focus on secure coding practices and input validation improvements.</p>
-    <a href="https://github.com/">GitHub Repository</a>
-  </div>
-
-</section>
-
-<section>
-
-  <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Network Engineering Intern</h3>
-    <p>Cloudix Technologies | Dec 2023 – Jun 2024</p>
-    <p>Supported network configuration, monitoring, troubleshooting, and gained exposure to enterprise IT infrastructure and security concepts.</p>
-  </div>
-
-  <div class="card">
-    <h3>Web Developer Intern</h3>
-    <p>Brainovision Solutions | 2021</p>
-    <p>Developed web applications using HTML, CSS, JavaScript and gained foundational exposure to secure coding and vulnerability awareness.</p>
-  </div>
-
-</section>
-
-<section>
-
-  <h2>Certifications</h2>
-  <div class="card">
-    - Google Cybersecurity Foundations (Coursera, 2025)<br>
-    - Advanced Java Programming – IIT (2020)<br>
-    - Web Development Training – Internshala (2021)<br>
-    - Network Engineering Internship Certificate (2024)
-  </div>
-
-</section>
-
-<section>
-
-  <h2>Contact</h2>
-  <div class="card">
-    Email: your-email@example.com <br>
-    LinkedIn: your-linkedin-profile <br>
-    GitHub: your-github-profile
-  </div>
+<div class="card">
+Email: your-email <br>
+LinkedIn: <a href="https://www.linkedin.com/in/sehba-ashraf-bangalath-6976072b8">Profile</a><br>
+GitHub: your-github
+</div>
 
 </section>
 
 <footer>
-  © 2026 Sehba Ashraf Bangalath | Cybersecurity Portfolio
+© 2026 Sehba Ashraf Bangalath | Cybersecurity Portfolio
 </footer>
 
 </body>
