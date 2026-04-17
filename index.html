@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +9,16 @@
 <style>
 :root {
   --bg:#0a0f14;
-  --panel:#111823;
-  --text:#c9d1d9;
-  --muted:#8b949e;
-  --accent:#00c2a8;
-  --accent2:#3b82f6;
-  --border:#1f2a37;
+  --panel:#0f141a;
+  --text:#d1d5db;
+  --muted:#7d8590;
+  --accent:#00ff9c;
+  --border:#1c232d;
 }
 
 body{
   margin:0;
-  font-family:Arial, sans-serif;
+  font-family:Consolas, monospace;
   background:var(--bg);
   color:var(--text);
 }
@@ -28,13 +26,14 @@ body{
 /* HEADER */
 header{
   text-align:center;
-  padding:70px 20px;
+  padding:80px 20px;
   border-bottom:1px solid var(--border);
 }
 
 header h1{
-  font-size:40px;
+  font-size:38px;
   margin:0;
+  letter-spacing:1px;
 }
 
 header span{
@@ -43,7 +42,27 @@ header span{
 
 header p{
   color:var(--muted);
-  margin-top:10px;
+  margin:12px 0 20px;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  padding:8px 14px;
+  margin:5px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  background:transparent;
+  border-radius:4px;
+  font-size:13px;
+  letter-spacing:0.5px;
+  transition:0.2s;
+  text-decoration:none;
+}
+
+.btn:hover{
+  background:var(--accent);
+  color:#000;
 }
 
 /* SECTIONS */
@@ -54,8 +73,9 @@ section{
 }
 
 h2{
-  border-left:3px solid var(--accent);
+  border-left:2px solid var(--accent);
   padding-left:10px;
+  font-size:18px;
 }
 
 /* CARDS */
@@ -64,43 +84,28 @@ h2{
   padding:18px;
   margin:12px 0;
   border:1px solid var(--border);
-  border-radius:8px;
+  border-radius:6px;
 }
 
 /* TAGS */
 .tag{
   display:inline-block;
-  background:#16212e;
+  border:1px solid var(--accent);
   color:var(--accent);
-  padding:4px 8px;
+  padding:3px 7px;
   margin:3px;
-  font-size:12px;
-  border-radius:4px;
+  font-size:11px;
+  border-radius:3px;
 }
 
 /* LINKS */
 a{
-  color:var(--accent2);
+  color:var(--accent);
   text-decoration:none;
 }
 
 a:hover{
-  text-decoration:underline;
-}
-
-/* BUTTON */
-.btn{
-  display:inline-block;
-  padding:10px 14px;
-  margin:10px 5px 0 5px;
-  background:var(--accent);
-  color:#000;
-  border-radius:6px;
-  font-weight:bold;
-}
-
-.btn:hover{
-  opacity:0.85;
+  opacity:0.8;
 }
 
 /* GRID */
@@ -131,8 +136,10 @@ footer{
   <h1>Sehba Ashraf <span>Bangalath</span></h1>
   <p>Cybersecurity Analyst | SOC Aspirant | Web Security Researcher</p>
 
-  <a class="btn" href="github_cv.pdf" target="_blank">View Resume</a>
-  <a class="btn" href="github_cv.pdf" download>Download Resume</a>
+  <div>
+    <a class="btn" href="github_cv.pdf" target="_blank">View CV</a>
+    <a class="btn" href="github_cv.pdf" download>Download CV</a>
+  </div>
 </header>
 
 <!-- ABOUT -->
@@ -167,7 +174,7 @@ Cybersecurity-focused Computer Science Engineering graduate with hands-on experi
   <div class="card">
     <h3>OWASP Security Analysis</h3>
     <p>Study of OWASP Top 10 vulnerabilities including SQL Injection and XSS.</p>
-    <a href="https://raw.githubusercontent.com/SehbaAshrafBangalath/SehbaAshrafBangalath2.github.io/main/OWASP_Juice_Shop_Report.pdf" target="_blank">
+    <a href="https://github.com/SehbaAshrafBangalath/SehbaAshrafBangalath2.github.io/blob/main/OWASP_Juice_Shop_Report.pdf" target="_blank">
       View Report
     </a>
   </div>
@@ -175,14 +182,14 @@ Cybersecurity-focused Computer Science Engineering graduate with hands-on experi
   <div class="card">
     <h3>Web Attack Simulation</h3>
     <p>Explored attack vectors and exploitation techniques in controlled labs.</p>
-    <a href="https://raw.githubusercontent.com/SehbaAshrafBangalath/SehbaAshrafBangalath2.github.io/main/PROJECT_FIRST.pdf" target="_blank">
+    <a href="https://github.com/SehbaAshrafBangalath/SehbaAshrafBangalath2.github.io/blob/main/PROJECT_FIRST.pdf" target="_blank">
       View Report
     </a>
   </div>
 
   <div class="card">
     <h3>Secure Web Development</h3>
-    <p>Built secure web applications using HTML, CSS, and JavaScript with focus on input validation and secure coding practices.</p>
+    <p>Built secure web applications using HTML, CSS, JavaScript with secure coding practices.</p>
   </div>
 
 </div>
